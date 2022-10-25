@@ -84,7 +84,7 @@ class Agent:
         else:
             small_sample = self.memory
 
-        states, actions, rewards, next_states, dones = zip(*small_sample) # TODO: check how zip function works
+        states, actions, rewards, next_states, dones = zip(*small_sample)
         self.trainer.train_step(states, actions, rewards, next_states, dones)
 
     def train_short_memory(self, state, action, reward, next_state, done):

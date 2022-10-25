@@ -13,7 +13,7 @@ class Linear_QNet(nn.Module):
         self.linear2 = nn.Linear(hidden_size, output_size)
 
     def forward(self, x):
-        # TODO: check python engineer beginner tutorial for pytorch
+
         x = F.relu(self.linear1(x))
         x = self.linear2(x)
         return x
@@ -54,7 +54,6 @@ class QTrainer:
         # want to get predicted Q values with current state
         prediction = self.model(state)
 
-        # TODO TODO TODO None-type issue is popping up here as well
         target = prediction.clone()
         for idx in range(len(done)):
             Q_new = reward[idx]
