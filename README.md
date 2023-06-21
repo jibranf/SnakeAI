@@ -17,8 +17,8 @@
   - This is a recursive equation, and the learning rate dicates how much newly learned behaviors will impact previous behaviors. Tweaking this value will yield different results 
   - To get the next state and next action, the model predicts these values and uses them in the equation
 
-# How to Install and Run the AI
+# How to Install and Run the program
 - To install, download each of the .py files to a directory
 -  To run the AI, run agent.py. Doing so will have two windows pop up, one that shows the current game being played, and the other being a plot of the scores over number of games played.
--  Once it is running, the model will save itself after each game played in a directory called "model", and the model will be a file 'model.pth'
+-  Once it is running, the model will save itself after each game played in a directory called "model", and the progress of the model will be stored in a file 'model.pth'
 
